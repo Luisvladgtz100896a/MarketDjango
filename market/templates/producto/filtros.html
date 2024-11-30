@@ -31,6 +31,7 @@
         <th>
           
           {% if request.path == request.get_full_path %}
+            <!-- recupera la url compelta y le anida order y la variable por ordenar -->
           <a href="{{request.get_full_path}}?order=name"> Nombres</a>
           {% else %}
           <a href="{{request.get_full_path}}&order=name"> Nombres</a>
